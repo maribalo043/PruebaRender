@@ -9,7 +9,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Compilamos el JAR y saltamos tests
-RUN mvn clean package -DskipTests
+RUN mvn clean package
 
 # ===== Etapa 2: Run =====
 FROM eclipse-temurin:17-jdk
